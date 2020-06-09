@@ -1,3 +1,21 @@
+/*-----------------------Global classes -------------*/
+a{
+  text-decoration: none;
+  color: #000000;
+}
+
+ button{
+   padding: .8rem 1.8rem;
+   margin: 1rem;
+   background: white;
+   border: 1px solid #9a9b9c;
+   border-radius: .4rem;
+   color: #9a9b9c;
+ }
+
+/*----------X-------------Global classes ------X-------*/
+
+
 #header {
   background-image: url("../images/rhema-kallianpur-uocSnWMhnAs-unsplash.jpg");
   background-repeat: no-repeat;
@@ -36,3 +54,147 @@ header p {
   width: 600px;
   max-width: 100%;
 }
+
+
+/* --------------------- Contact us Message area ---------------------*/
+main .container{
+  display: grid;
+  grid-template-columns: 40% 60%;
+  padding: 2rem 6rem;
+  grid-gap: 5rem;
+  width: 100%;
+}
+
+main .container .contact-title h2{
+  text-transform: uppercase;
+  padding: .5rem 0;
+  font-size: 3rem;
+}
+
+main .container .contact-title p{
+  padding: 1rem 0;
+  font-family: calibri;
+}
+
+main .container .contact-title h4{
+  padding: 1rem 0;
+}
+
+main .container .contact-message{
+  padding: 1.1rem 0;
+  width: 90%;
+}
+
+main .container .contact-message h3{
+  color: #7e7f80;
+  padding: 0 1.1rem;
+}
+
+button.btn1{
+  border-color: #339AF9;
+}
+
+main .container .input-group{
+  padding: 1.1rem .8rem;
+}
+
+main .container .input-group h3{
+  padding: .8rem 0;
+}
+
+main .container .input-text{
+  float: right;
+  margin-right: .32rem;
+  margin-bottom: .8rem;
+}
+
+main .container input[type=text]::placeholder{
+  color: #cccccc;
+}
+
+main .container .input-group input[type=text]{
+  padding: .6rem 1.6rem;
+  width: 47%;
+  border: 1px solid #cccccc;
+  border-radius: .2rem;
+  color: #cccccc;
+  outline: none;
+}
+
+textarea{
+  width: 99%;
+  border: 1px solid #cccccc;
+  border-radius: .2rem;
+  outline: none;
+}
+
+textarea::placeholder{
+  padding: .8rem .8rem;
+  color: #cccccc;
+}
+
+main .container button.btn-send{
+  width: 20%;
+  background-color: #339AF9;
+  color: #f0eee9;
+  text-transform: uppercase;
+  outline: none;
+  border: 1px solid #339AF9;
+}
+
+/*           Viewport less then or equal to 1130px            */
+
+@media only screen and (max-width: 1130px){
+  button{
+    padding: .8rem .9rem;
+    margin: .4rem;
+    border-radius: .3rem;
+  }
+
+}
+/*      x       Viewport less then or equal to 1130px    x     */
+
+/*              Viewport less then or equal to 750px            */
+
+@media only screen and (max-width: 750px){
+  main .container{
+    display: block;
+
+  }
+}
+
+/*        x      Viewport less then or equal to 750px       x     */
+
+/*              Viewport less then or equal to 520px            */
+
+@media only screen and (max-width: 520px){
+  main .container{
+    display: block;
+  }
+
+  button{
+    padding: .9rem 1.6rem;
+    margin: .5rem;
+    border-radius: .4rem;
+  }
+
+  main .container input[type=text]::placeholder{
+    color: #cccccc;
+    font-size: .7rem;
+  }
+  
+  main .container .input-group input[type=text]{
+    padding: .6rem .6rem;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  main .container button.btn-send{
+    width: 80px;
+    text-align: center;
+    margin: 0;
+    padding-left: 20px;
+  }
+}
+
+/*        x      Viewport less then or equal to 520px       x     */
